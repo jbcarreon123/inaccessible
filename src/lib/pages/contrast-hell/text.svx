@@ -1,0 +1,8 @@
+---
+title: Contrast Hell
+category: Colors and Contrast
+author: jbcarreon123
+---
+
+Contrast, one of the things that is very important, from arts,
+from TV shows and movies, to UI design.

@@ -1,0 +1,119 @@
+@font-face {
+    font-family: "Inter";
+    src: url('/fonts/Inter-Variable.ttf');
+    font-weight: 600;
+}
+
+main, .text-view, .hide-button, .page-view {
+    color: var(--grv-text);
+    background-color: var(--grv-mantle);
+}
+
+main, .text-view, .hide-button, body, .page-view {
+    --grv-red: rgb(204, 36, 29);
+    --grv-green: rgb(152, 151, 26);
+    --grv-yellow: rgb(215, 153, 33);
+    --grv-blue: rgb(69, 133, 136);
+    --grv-sapphire: rgb(131, 165, 152);
+    --grv-sky: rgb(104, 157, 106);
+    --grv-text: rgb(235, 219, 178);
+    --grv-subtext0: rgb(168, 153, 132);
+    --grv-overlay0: rgb(60, 56, 54);
+    --grv-mantle: rgb(29, 32, 33);
+    --grv-surface0: rgb(80, 73, 69);
+    --grv-base: rgb(50, 48, 47);
+}
+
+@media (prefers-color-scheme: light) {
+    main, .text-view, .hide-button, body, .page-view
+    {
+        --grv-red: rgb(204, 36, 29);
+        --grv-green: rgb(152, 151, 26);
+        --grv-yellow: rgb(215, 153, 33);
+        --grv-blue: rgb(69, 133, 136);
+        --grv-sapphire: rgb(7, 102, 120);
+        --grv-sky: rgb(104, 157, 106);
+        --grv-text: rgb(60, 56, 54);
+        --grv-subtext0: rgb(124, 111, 100);
+        --grv-overlay0: rgb(235, 219, 178);
+        --grv-mantle: rgb(249, 245, 215);
+        --grv-surface0: rgb(213, 196, 161);
+        --grv-base: rgb(242, 229, 188);
+    }
+}
+
+#mobile-warning {
+    display: none;
+}
+
+@media screen and (max-width: 500px) {
+    #mobile-warning {
+        display: block;
+    }
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x:hidden;
+    background-color: var(--grv-mantle, var(--grv-bkp-mantle));
+}
+
+a,
+a:visited,
+.a,
+.a:visited {
+    color: var(--grv-green)
+}
+
+a:hover,
+.a:hover {
+    color: var(--grv-yellow)
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.marquee {
+    height: 35px;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.marquee:nth-of-type(even) .marqueeInner {
+    display: block;
+    width: 200%;
+    position: absolute;
+    animation: marquee 10s linear infinite;
+}
+
+.marquee:nth-of-type(odd) .marqueeInner {
+    display: block;
+    width: 200%;
+    position: absolute;
+    animation: marquee 10s linear infinite reverse;
+}
+
+.marqueeInner span {
+    float: left;
+    width: 50%;
+    overflow: hidden;
+    text-wrap-mode: nowrap;
+}
+
+@keyframes marquee {
+    0% {
+        left: 0;
+    }
+
+    100% {
+        left: -100%;
+    }
+}
