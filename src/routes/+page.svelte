@@ -29,7 +29,7 @@
         so give that a read if you want to!
     </p>
     <p>
-        and huge thanks on some folks at the Nekoweb Discord Server (especially <a href="https://layercake.nekoweb.org/">Layercake</a> and <a href="https://moosyu.com">moosyu</a>)
+        and huge thanks on some folks at the Nekoweb Discord Server (especially <a href="https://layercake.nekoweb.org/">Layercake</a>, <a href="https://toasty.place/">ToastofTheSewn</a> and <a href="https://moosyu.com">moosyu</a>)
         for helping me and giving me some ideas for this website.
     </p>
     <p>
@@ -47,6 +47,14 @@
     <br />
     <a href="https://nekoweb.org/"><img src="https://nekoweb.org/assets/buttons/button5.gif" alt="Nekoweb" title="Nekoweb (button by max.nekoweb.org)"></a>
     <a href="https://jbcarreon123.nekoweb.org"><img src="https://jbcarreon123.nekoweb.org/sitebuttonv2.png" alt="jb's site" title="jbcarreon123: the webmaster of this site" style="image-rendering: pixelated;"/></a>
+    <a href="https://toasty.place/" target="_blank" rel="noopener"
+		><img
+			src="https://toastofthesewn.nekoweb.org/images/buttons/pagebutton1.gif"
+			loading="lazy"
+			title="ToastofTheSewn: another webmaster"
+			alt="ToastofTheSewn"
+		/></a
+	>
     <a href="https://layercake.nekoweb.org/"><img style="image-rendering: pixelated" src="https://files.catbox.moe/h7nelz.gif" alt="layercake" title="Layercake"></a>
     <a href="https://moosyu.nekoweb.org/"><img src="https://moosyu.nekoweb.org/assets/button.png" alt="moosyus awesome button"></a>
 </main>
