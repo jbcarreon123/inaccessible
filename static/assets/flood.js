@@ -11,10 +11,9 @@ flood.serverURL = "https://brain.melonking.net"; // Server - Do not Edit.
 //flood.serverURL = "http://localhost:3000"; // For testing - Please ignore!
 flood.ringPage = "https://melonking.net/free/software/flood.html"; // Do not edit!
 flood.ringTarget = "_blank";
-flood.texture = "https://melonking.net/images/flood-water.png";
-flood.textureWidth = 314;
-flood.textureHeight = 98;
-flood.drainSound = "https://melonking.net/audio/ui/flush.mp3";
+flood.textureWidth = 256; // Resize to match your image file
+flood.textureHeight = 256;
+flood.drainSound = "https://melonking.net/audio/ui/squish.mp3";
 flood.drainTooSoonSound = "https://melonking.net/audio/ui/clunk.mp3";
 flood.updateSpeed = 5000; // Please do not lower!
 flood.renderSpeed = 70;
@@ -27,16 +26,19 @@ flood.disableInFrames = false; // Stop the script running in frames
 flood.disableMessages = false; // Hides the info message.
 
 flood.msg = flood.msg ?? {};
-flood.msg.info = "&#x1FAA3;";
-flood.msg.rising = "The water level is rising...";
-flood.msg.falling = "The water level is falling...";
-flood.msg.toosoon = "Its too soon to bilge again!";
-flood.msg.one = "This page has a harmless leak.";
-flood.msg.two = "It looks like the page has a bad leak!";
-flood.msg.three = "Goodness, this page has a major leak!";
-flood.msg.four = "Oh my, there's flood on this page!";
-flood.msg.five = "The page is deep under water!";
-flood.msg.six = "This page is totaly submerged!";
+// Goo Messages
+flood.msg.info = "🧪";
+flood.msg.rising = "The goo is growing!";
+// Goo Flood!
+flood.texture = "https://melonking.net/images/flood-goo.png";
+flood.msg.falling = "The goo is shrinking!";
+flood.msg.toosoon = "You are too sticky to do that!";
+flood.msg.one = "You see some goo on the floor!";
+flood.msg.two = "Oh wow goo is everywhere!";
+flood.msg.three = "Ahhh the goo is upto your knees!";
+flood.msg.four = "The goo is overwhelming!";
+flood.msg.five = "Everything is coverd in goo!";
+flood.msg.six = "100% Gooooo!";
 
 // Active vars, do not edit!
 flood.updateLoop = flood.updateLoop ?? undefined

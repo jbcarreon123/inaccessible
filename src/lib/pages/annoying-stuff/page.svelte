@@ -22,7 +22,7 @@
 
 {#key slug}
     <script src="/assets/flood.js"></script>
-    <link href="https://melonking.net/styles/flood.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="/assets/flood.css" rel="stylesheet" type="text/css" media="all" />
 {/key}
 
 <audio src="/audio/_____disfigure_blank.mp3" autoplay loop></audio>

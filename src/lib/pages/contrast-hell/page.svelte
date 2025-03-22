@@ -2,8 +2,8 @@
     <style>
         .page-view,
         body {
-            --grv-text: rgb(0, 200, 255);
-            --grv-mantle: rgb(0, 255, 0);
+            --grv-text: #FF050D;
+            --grv-mantle: #F0009C;
         }
 
         .page-view * {
@@ -17,6 +17,10 @@
             100% {
                 transform: rotate(-0.1deg);
             }
+        }
+
+        .wave {
+            filter:contrast(3000) !important;
         }
     </style>
 </svelte:head>
