@@ -1,7 +1,7 @@
 import { mdsvex } from "mdsvex";
 import adapter from 'svelte-adapter-nekoweb';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
-import { env } from "bun";
+import { env } from "node:process";
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
