@@ -33,6 +33,9 @@
         for helping me and giving me some ideas for this website.
     </p>
     <p>
+        If you like or hate this site, consider <a href="https://inaccessible.atabook.org/">signing our guestbook</a> or <a href="https://nekoweb.org/follow/inaccessible">following us on Nekoweb</a>!
+    </p>
+    <p>
         And that's all folks! - jbcarreon123 @ <a href="https://jbcarreon123.nekoweb.org">jbcarreon123.nekoweb.org</a>
     </p>
     <p>
