@@ -35,8 +35,11 @@
     <div style="font-size:32px;font-weight:600;">
         Hey there! This is the homepage!
     </div>
-    <div style="padding-top:6px;padding-bottom:12px;">
+    <div style="padding-top:6px;">
         Select a page below to see what it looks like!
+    </div>
+    <div style="padding-top:6px;padding-bottom:12px;">
+        If you like or hate this site, consider <a href="https://inaccessible.atabook.org/">signing our guestbook</a> or <a href="https://nekoweb.org/follow/inaccessible">following us on Nekoweb</a>!
     </div>
     {#each textCats as textCat}
     <div style="padding-top:12px">
@@ -67,7 +70,7 @@
                 onclick={function () {
                     goto("/main");
                 }}>Go to homepage</span
-            >
+            > <a href="https://inaccessible.atabook.org/">Sign our guestbook</a> <a href="https://nekoweb.org/follow/inaccessible">Follow us on Nekoweb</a>
         </div>
         <div style="font-size:32px;font-weight:600;">
             {post.metadata.title}
