@@ -58,14 +58,11 @@ flood.audio = flood.audio ?? {};
 flood.audio.flush = flood.audio.flush ?? new Audio(flood.drainSound)
 flood.audio.clunk = flood.audio.clunk ?? new Audio(flood.drainTooSoonSound) 
 
-flood.exists = false
-
 // Setup event!
-window.addEventListener("inaccessible.PageLoadEvent", async () => {
-    if (flood.exists) return;
+window.removeEventListener("inaccessible.PageLoadEvent", () => loadFlood(), true);
+window.addEventListener("inaccessible.PageLoadEvent", () => loadFlood(), true);
 
-    flood.exists = true;
-
+const loadFlood = () => {
     console.log('loaded')
 
     if (flood.disableInFrames && window !== window.parent) {
@@ -114,7 +111,7 @@ window.addEventListener("inaccessible.PageLoadEvent", async () => {
         window.clearInterval(i);
     }
 
-    await updateFloodLevel(false, true);
+    updateFloodLevel(false, true);
     flood.updateLoop = setInterval(updateFloodLevel, flood.updateSpeed);
     flood.renderLoop = setInterval(renderWater, flood.renderSpeed);
     flood.goUpLoop = setInterval(goUp, flood.goUpSpeed)
@@ -125,7 +122,7 @@ window.addEventListener("inaccessible.PageLoadEvent", async () => {
     flood.html.flood.addEventListener("click", async () => {
         doBilge();
     });
-});
+}
 
 // Issue a bilge request!
 function doBilge() {

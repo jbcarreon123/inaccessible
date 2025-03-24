@@ -1,10 +1,10 @@
-<script>
+<script lang="ts">
     import { afterNavigate, beforeNavigate } from "$app/navigation";
     import { slug as Slug } from "$lib/stores/slugStore";
     import { onMount } from "svelte";
 
     beforeNavigate((nav) => {
-        if ((nav.to?.params.slug !== undefined) && nav.to?.params.slug !== "annoying-stuff") {
+        if (nav.to?.params.slug !== undefined && nav.to?.params.slug !== "annoying-stuff") {
             document.querySelectorAll('#flood')?.forEach((el) => el.remove())
             document.querySelectorAll('#flood-menu')?.forEach((el) => el.remove())
             console.log(nav.to?.params.slug)
@@ -15,6 +15,15 @@
 
     afterNavigate(() => {
         window.dispatchEvent(event)
+    })
+
+    onMount(() => {     
+        document.querySelectorAll("a").forEach((a: HTMLAnchorElement) => {
+            a.addEventListener("mousemove", () => {
+                const ding = new Audio("/audio/_____ding.mp3");
+                ding.play()
+            })
+        })
     })
 
     $: slug = $Slug;

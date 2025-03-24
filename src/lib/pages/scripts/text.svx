@@ -1,6 +1,6 @@
 ---
-title: Annoying Things
-category: Nikpicks
+title: Scripts
+category: Annoying Stuff
 author: jbcarreon123
 ---
 

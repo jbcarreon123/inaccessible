@@ -24,7 +24,7 @@ main, .text-view, .hide-button, body, .page-view {
     --grv-base: rgb(50, 48, 47);
 }
 
-@media (prefers-color-scheme: light) {
+/* @media (prefers-color-scheme: light) {
     main, .text-view, .hide-button, body, .page-view
     {
         --grv-red: rgb(204, 36, 29);
@@ -40,7 +40,7 @@ main, .text-view, .hide-button, body, .page-view {
         --grv-surface0: rgb(213, 196, 161);
         --grv-base: rgb(242, 229, 188);
     }
-}
+} */
 
 #mobile-warning {
     display: none;
@@ -64,7 +64,10 @@ a,
 a:visited,
 .a,
 .a:visited {
-    color: var(--grv-green)
+    color: var(--grv-green);
+
+    text-decoration: underline;
+    cursor:pointer;
 }
 
 a:hover,
@@ -73,6 +76,7 @@ a:hover,
 }
 
 main {
+    padding-top: 12px;
     max-width: 800px;
     margin: 0 auto;
 }
